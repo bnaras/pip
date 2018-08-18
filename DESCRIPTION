@@ -1,0 +1,40 @@
+Package: pip
+Title: Platelet Inventory Prediction
+Version: 0.3-7
+VignetteBuilder: knitr
+Authors@R: c(
+        person(given = "Leying", family = "Guan",
+                    role = c("aut"), email = "leying.guan@gmail.com"),
+	person(given = "Robert J.", family = "Tibshirani",
+                    role = c("aut"), email = "tibs@stanford.edu"),
+	person(given = "Saurabh", family = "Gombar",
+                    role = c("aut"), email = "sgombar@stanford.edu"),
+	person(given = "Xiaoying", family = "Tian",
+                    role = c("ctb"), email = "xtian@stanford.edu"),
+	person(given = "Robert", family = "Scott",
+                    role = c("ctb"), email = "RoScott@stanfordhealthcare.org"),
+	person(given = "Alison J.", family = "Zemek",
+                    role = c("ctb"), email = "azemek@stanford.edu"),
+	person(given = "Tho Duc", family = "Pham",
+                    role = c("aut"), email = "thopham@stanford.edu"),
+	person(given = "Balasubramanian", family = "Narasimhan",
+                    role = c("aut", "cre"), email = "naras@stat.stanford.edu"),
+	person(given = "Gomathi", family = "Krishnan",
+                    role = c("ctb"), email = "gomathik@stanford.edu"))
+URL: https://github.com/bnaras/pip
+BugReports: https://github.com/bnaras/pip
+Description: Forecast inventory of platelet or any other item based on past history
+    and projected usage. Facilities are provided for indicating forecast window and
+    length of past history to use. A combination of time series analysis together with
+    linear programming is used to optimize a criterion. 
+Depends: R (>= 3.4.2)
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat,
+    shiny
+RoxygenNote: 6.1.0
+Imports: lpSolveAPI
